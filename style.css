@@ -27,3 +27,41 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+main img {
+  width: 100%;
+}
+
+.br-background {
+  background-color: tan;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Groups & Items (Mobile first) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items (Desktop)  */
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+}
